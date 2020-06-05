@@ -29,7 +29,7 @@ module.exports = {
       client.provider.whenReady(async () => {
         console.log(chalk.green('LenoxBot is ready!'));
         console.log('tzestz');
-        // require('../bin/www');
+         require('../bin/www');
         console.log('zesz');
         var http = require('http');
 
@@ -397,7 +397,7 @@ module.exports = {
         }, 86400000);
 
         // Creditsranklist leaderboard
-        /* let userInfo = [];
+         let userInfo = [];
 				const userSettingsList = await client.provider.userSettings;
 				for (const key of userSettingsList) {
 					if (!isNaN(key[1].credits) && client.users.get(key[0])) {
@@ -425,7 +425,7 @@ module.exports = {
 				for (let i = 0; i < userInfo.length; i += 1) {
 					userInfo[i].rank = (i + 1);
 				}
-				await client.provider.setBotsettings('botconfs', 'top100credits', userInfo); */
+				await client.provider.setBotsettings('botconfs', 'top100credits', userInfo); 
 
         const embed = new Discord.MessageEmbed()
           .setTitle('Botrestart')
